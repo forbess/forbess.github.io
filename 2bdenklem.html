@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>1.Dereceden 2 Bilinmeyenli Denklemler</title>
+           <div id="girdiler">
+            <input type="number" value="0" class="num" id="a1"> <font id="yazi"> x + </font>
+            <input type="number" value="0" class="num" id="b1"> <font id="yazi"> y = </font>
+            <input type="number" value="0" class="num" id="c1"> <br> <br>
+            <input type="number" value="0" class="num" id="a2"> <font id="yazi"> x + </font>
+            <input type="number" value="0" class="num" id="b2"> <font id="yazi"> y = </font>
+            <input type="number" value="0" class="num" id="c2"> <br> <br>
+            <input type="button" value="Hesapla" onclick="calculate()">
+           </div>
+        <script>
+            function getValueOf(x) {
+              var val = parseInt(document.getElementById(x).value);
+              return val;
+            }
+            
+           function calculate()  
+           { 
+            
+            var delta = (getValueOf("a1") * getValueOf("b2")) - (getValueOf("a2")  * getValueOf("b1"));
+            
+            var deltaX = (getValueOf("c1") * getValueOf("b2")) - (getValueOf("c2") * getValueOf("b1"));
+            
+            var deltaY = (getValueOf("a1") * getValueOf("c2")) - (getValueOf("a2") * getValueOf("c1"));
+            
+            var x = (deltaX / delta);
+            var y = (deltaY / delta);
+            
+            var text = ("x =" + "(" + x + ")" + " // " + "y = " + "(" + y + ")" );
+            alert(text);
+            
+           }
+            
+            
+            </script>
+            <style>
+               
+                
+                .num {
+                        width:60px;
+                        border: 1px solid #1c1c1c;
+                        border-radius: 2px;
+                        margin-right: 4px;
+                }
+                
+                #girdiler {
+                    width:265px;
+                    height:110px;
+                    
+                    
+                    position: absolute;
+                    top:0;right:0;bottom:0;left:0;
+                    margin:auto;
+                    
+                    
+                }
+                
+                #yazi {
+                    color:#405580;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                </style>
+    </head>
+    <body>
+        </body>
+        </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<head>
+	<div id ="yaricap">
+		<font color="#000000">Yarıçap (r - (cm))<br></font>
+			<input type="number" id="yaricc" value="0">
+			<input type="button" id="buton" value="Hesapla" onclick="hesapp()">
+			<a href="alanlar2.html" target="_self" id="don"> <br> Geri Dön</a>
+	</div>
+<title>Çember</title>
+<script>
+function hesapp () {
+	var yarir = parseInt(document.getElementById("yaricc").value);
+	var pii = Math.PI;
+	var alann = (pii* yarir * yarir);
+	alert(alann + " cm(kare)");
+
+}
+
+</script>
+<style>
+img {
+	width:650px;
+	height:650px;
+	margin-bottom:0px;
+	margin-left:350px;
+	margin-top:-290px;
+	margin-right:0px;
+}
+
+#yaricap {
+	margin-left:1050px;
+	margin-top:250px;
+	margin-right:0px;
+	margin-bottom:0px;
+} 
+
+
+
+</style>
+<body>
+<img src="çember.png">
+
+</body>
+</html>

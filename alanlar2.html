@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<head>
+<title>Alanlar</title>
+
+<style>
+
+	body {
+	background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+	}
+
+			h2 > a {
+		  position: relative;
+		  color: #fff;
+		  text-decoration: none;
+		}
+
+		h2 > a:hover {
+		  color: #fff;
+		}
+		h2 > a:before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 2px;
+		  bottom: 0;
+		  left: 0;
+		  background-color: #fff;
+		  visibility: hidden;
+		  -webkit-transform: scaleX(0);
+		  transform: scaleX(0);
+		  -webkit-transition: all 0.3s ease-in-out 0s;
+		  transition: all 0.3s ease-in-out 0s;
+		}
+
+		h2 > a:hover:before {
+		  visibility: visible;
+		  -webkit-transform: scaleX(1);
+		  transform: scaleX(1);
+		}
+	/* ESKİ */
+	
+	/* ul {
+		list-style: none;
+		width:300px;
+		height:300px;
+		margin-bottom:0px;
+		margin-left:35%;
+		margin-top:15%;
+		margin-right:0px;
+		text-decoration: none;
+
+
+	}
+
+	li {
+		text-align: center;
+		font:30px Arial, Sans-serif;
+		border:1px black solid;
+		border-radius:2px;
+		background-color:#405580;
+		text-decoration: none;
+	} */
+
+	.a {
+		  border: 6px solid #405580;
+	  background-color: #405580;
+	  border-radius:4px;
+	  font-family:"Times New Roman" , Times, serif;
+	}
+	#alanlar {
+		width:200px;
+		height:270px;
+		
+		position: absolute;
+		top:0;right:0;left:0;bottom:0;
+		margin:auto;
+
+	}
+
+</style>
+</head>
+<body>
+	<div id="alanlar">
+		
+			<h2><a href="dikdörtgen.html" target="_self" class="a"><font color="#FFFFFF">Dikdörtgen</font></a></h2>		
+			<h2><a href="çember.html" target="_self" class="a"><font color="#FFFFFF">Çember</font></a></h2>
+			<h2><a href="kare.html" target="_self" class="a"><font color="#FFFFFF">Kare</font></a></h2>
+			<h2><a href="Üçgen.html" target="_self" class="a"><font color="#FFFFFF">Üçgen</font></a></h2>
+			<h2><a href="hexagon.html" target="_self" class="a"><font color="#FFFFFF">Altıgen</font></a></h2>
+			<h2><a href="programlar.html" target="_self" class="a"><font color="#FFFFFF">Programlar'a Dön</font></a></h2>
+		
+	</div>
+</body>
+</html>

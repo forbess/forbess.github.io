@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<head>
+<title>Dikdörtgen</title>
+		<div id="kenarlar">
+		<font color="#000000">Kenar a (cm) <br> </font>
+			<input type="number" id="kenarA" value="0">
+		<font color="#000000"><br> Kenar b (cm) <br> </font>
+			<input type="number" id="kenarB" value="0">
+		<input type="button" id="buton" onclick="hesapla()" value="Hesapla"><br>
+		<a href="alanlar2.html" target="_self" id="don"> Geri Dön</a>
+
+		</div>
+<script>
+function hesapla () {
+	var aKenari = parseInt(document.getElementById("kenarA").value);
+	var bKenari = parseInt(document.getElementById("kenarB").value);
+	var toplam = (aKenari*bKenari);
+	alert(toplam + " cm(kare)");
+}
+
+
+</script>
+<style>
+ img {
+	width:650px;
+	height:650px;
+	margin-right:0px;
+	margin-left:27%;
+	margin-bottom:0px;
+	margin-top:-340px;
+} 
+
+/* #kenarB {
+	margin-top:0px;
+	margin-right:0px;
+	margin-left:0px;
+	margin-bottom:0px;
+}
+
+#kenarA {
+	margin-bottom:0px;
+	margin-left:80%;
+	margin-top:350px;
+	margin-right:0px;
+} */
+
+#kenarlar {
+	margin-bottom:0px;
+	margin-left:80%;
+	margin-top:250px;
+	margin-right:0px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<img src="Dikdörtgen.png">
+
+</body>
+</html>

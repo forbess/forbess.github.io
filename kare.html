@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<head>
+	<div id="kenar">
+			<font color="#000">Kenar a (cm)<br></font>
+		<input type="number" id="kenara" value="0">
+		<input type="button" id="buton" value="Hesapla" onclick="hesa()">
+		<a href="alanlar2.html" target="_self" id="don"> <br> Geri Dön</a>
+	</div>
+<title>Kare</title>
+<script>
+
+function hesa() {
+	var aKenarii = parseInt(document.getElementById("kenara").value);
+	var alan = (aKenarii * aKenarii);
+	alert (alan + " cm(kare)");
+}
+
+</script>
+<style>
+ 	img {
+ 		width:700px;
+ 		height:700px;
+ 		margin-top:-350px;
+ 		margin-bottom:0px;
+ 		margin-left:300px;
+ 		margin-right:0px;
+ 	}
+
+ 	#kenar {
+ 		margin-left:1000px;
+ 		margin-right:0px;
+ 		margin-top:250px;
+ 		margin-bottom:0px;
+ 	}
+
+</style>
+</head>
+<body>
+<img src="kare.png">
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<div id="numm">
+<input type="number" id="sayi" class="numara" value="0">
+<input type="button" id="buton" class="buttton" value="Sayı Asal Mı?" onclick="hesapp()">
+	</div>
+<title>Asal Sayı Bulucu</title>
+<script>
+function hesapp() {	
+	var sayi = parseInt(document.getElementById("sayi").value);
+	if (sayi > 2) {
+		var bolenMax = Math.floor(Math.sqrt(sayi));
+		var bolen=2;
+		var sonuc="sayısı asal";
+			while (bolen <= bolenMax) {
+				if (sayi % bolen === 0) {
+					sonuc = "sayısı asal değil";
+					break;
+				}
+				bolen++;
+			}
+			alert(sayi + " " + sonuc);
+	} 
+		else if (sayi==2) {
+			alert("2 sayısı asal");
+}
+	else {
+		alert("0,1 ya da negatif sayılar asal olamaz");
+	}
+}
+
+</script>
+<style>
+
+
+	#numm {
+		margin-bottom:0px;
+		margin-right:0px;
+		margin-left:450px;
+		margin-top:20%;	
+	}
+
+.numara {
+	border:1px solid #1c1c1c;
+	border-radius: 5px;
+}
+
+.buttton {
+	border:1px solid #1c1c1c;
+	border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+</body>
+</html>

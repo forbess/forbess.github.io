@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Cramer Kuralı İle 3 Bilinmeneyenli Denklem Çözdürme</title>
+           <div id="all">
+            <input type="number" value="0" class="numbers" id="a1"> <font id="yazi"> x + </font>
+            <input type="number" value="0" class="numbers" id="b1"> <font id="yazi"> y + </font>
+            <input type="number" value="0" class="numbers" id="c1"> <font id="yazi"> z = </font>
+            <input type="number" value="0" class="numbers" id="i"> <br> <br>
+            <input type="number" value="0" class="numbers" id="a2"> <font id="yazi"> x + </font>
+            <input type="number" value="0" class="numbers" id="b2"> <font id="yazi"> y + </font>
+            <input type="number" value="0" class="numbers" id="c2"> <font id="yazi"> z = </font> 
+            <input type="number" value="0" class="numbers" id="j"> <br><br>
+            <input type="number" value="0" class="numbers" id="a3"> <font id="yazi"> x + </font>
+            <input type="number" value="0" class="numbers" id="b3"> <font id="yazi"> y + </font>
+            <input type="number" value="0" class="numbers" id="c3"> <font id="yazi"> z = </font>
+            <input type="number" value="0" class="numbers" id="t"> <br> <br>
+            <input type="button" value="Hesapla" onclick="calculateValues()">
+           </div>
+        <script type="text/javascript">
+            function getValueOf(x) {var value = parseInt(document.getElementById(x).value);return value;}            
+            
+             function calculateValues() 
+             { 
+                 var delta = ((getValueOf('a1') * getValueOf('b2') * getValueOf('c3')) + (getValueOf('a2') * getValueOf('b3') * getValueOf('c1')) + (getValueOf('a3') * getValueOf('b1') * getValueOf('c2'))) - 
+                 ((getValueOf('c1') * getValueOf('b2') * getValueOf('a3')) + (getValueOf('c2') * getValueOf('b3') * getValueOf('a1')) + (getValueOf('c3') * getValueOf('b1') * getValueOf('a2')));
+                 // alert(delta);
+                 
+                 var deltaX = ((getValueOf('i') * getValueOf('b2') * getValueOf('c3')) + (getValueOf('j') * getValueOf('b3') * getValueOf('c1')) + (getValueOf('t') * getValueOf('b1') * getValueOf('c2')))  - 
+                 ((getValueOf('c1') * getValueOf('b2') * getValueOf('t')) + (getValueOf('c2') * getValueOf('b3') * getValueOf('i')) + ((getValueOf('c3') * getValueOf('b1') * getValueOf('j'))));
+                 //alert(deltaX);
+                 
+                 var deltaY = ((getValueOf('a1') * getValueOf('j') * getValueOf('c3')) + (getValueOf('a2') * getValueOf('t') * getValueOf('c1')) + (getValueOf('a3') * getValueOf('i') * getValueOf('c2')))  - 
+                 ((getValueOf('c1') * getValueOf('j') * getValueOf('a3')) + (getValueOf('c2') * getValueOf('t') * getValueOf('a1')) + ((getValueOf('c3') * getValueOf('i') * getValueOf('a2'))));
+                 
+                 
+                 var deltaZ = ((getValueOf('a1') * getValueOf('b2') * getValueOf('t')) + (getValueOf('a2') * getValueOf('b3') * getValueOf('i')) + (getValueOf('a3') * getValueOf('b1') * getValueOf('j')))  - 
+                 ((getValueOf('i') * getValueOf('b2') * getValueOf('a3')) + (getValueOf('j') * getValueOf('b3') * getValueOf('a1')) + ((getValueOf('t') * getValueOf('b1') * getValueOf('a2'))));
+                 
+                 var x = (deltaX / delta);
+                 var y = (deltaY / delta);
+                 var z = (deltaZ / delta);
+                 alert('x = ' + x + ' // y = ' + y + ' // z = ' + z);
+                 
+                
+             }
+                
+        </script>
+        <style>
+         
+                 
+            #all 
+            {
+                 
+                        width:350px;
+                        height:90px;
+                        
+                        
+                        position:absolute;
+                        top:0;
+                        right:0;
+                        left:0;
+                        bottom:0;
+                        margin:auto;
+            }
+            
+            .numbers {
+                        /* border:1px solid #1c1c1c;
+                        border-radius:4px; */
+                        /* color:#405580;
+                       font-weight: bold;
+                       font-style: italic; */
+                        width:60px;
+                        border: 1px solid #1c1c1c;
+                        border-radius: 2px;
+                       
+                        
+            }
+
+            #yazi {
+                color:#405580;
+                font-weight: bold;
+                font-style: italic;
+            }
+            </style>
+    </head>
+    <body>
+        </body>
+</html>

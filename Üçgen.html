@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<head>
+	<div id="kenars">
+			<font color="#000">Yükseklik (h - (cm))<br></font>
+		<input type="number" id="yukseklikH" value="0">
+			<font color="#000"><br>Taban (a - (cm))<br></font>
+		<input type="number" id="kenarrA" value="0">
+			<input type="button" id="buton" value="Hesapla" onclick="hesaplaa()">
+			<a href="alanlar2.html" target="_self" id="don"> <br> Geri Dön</a> 
+	</div>
+<title>Üçgen</title>
+<script>
+	function hesaplaa() {
+		var aKenar = parseInt(document.getElementById("kenarrA").value);
+		var yuksekklik = parseInt(document.getElementById("yukseklikH").value);
+		var alann = ((aKenar * yuksekklik) /2 );
+		alert(alann + " cm(kare)")
+	}
+
+</script>
+<style>
+
+	img {
+		width:700px;
+		height:700px;
+		margin-bottom:0px;
+		margin-left:300px;
+		margin-right:0px;
+		margin-top:-300px;
+	}
+
+	#kenars {
+		margin-top:250px ;
+		margin-right:0px;
+		margin-left:1050px;
+		margin-bottom:0px;
+	}
+
+
+
+</style>
+</head>
+<body>
+	<img src="Üçgen.png">
+</body>
+</html>

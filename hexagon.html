@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<div id="kenarrlar">
+			<font color="#000">Kenar a <br></font>
+		<input type="number" id="kenarbir" value="0">
+		<input  type="button" id="buton" value="Hesapla" onclick="calcu()">
+		<a href="alanlar2.html" target="_self" id="don"> <br> Geri Dön</a>
+
+	</div>
+<title>Altıgen</title>
+<script>
+function calcu() {
+	var kenarr = parseInt(document.getElementById("kenarbir").value);
+	var kokuc = Math.sqrt(3);
+	var kare = (kenarr * kenarr);
+	var alann = (6 * ( (kare * kokuc) / 4 ));
+	alert(alann);
+
+}
+</script>
+<style>
+
+
+
+	img {
+		width:500px;
+		height:500px;
+		margin-bottom:0px;
+		margin-right:0px;
+		margin-top:-220px;
+		margin-left:400px;
+	}
+
+	#kenarrlar {
+		margin-left:1000px;
+		margin-top:250px;
+		margin-right:0px;
+		margin-bottom:0px;
+	}
+
+</style>
+</head>
+<body>
+<img src="Altıgen.png">
+</body>
+</html>

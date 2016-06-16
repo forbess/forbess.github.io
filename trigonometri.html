@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <head>
+        <title>TRİGONOMETRİK DEĞERLER</title>
+            <script>
+                
+                function sinHesapla() 
+                {
+                   var j = parseInt(document.getElementById("x").value);
+                   alert(Math.sin(j));
+                }
+                
+                function cosHesapla() 
+                {
+                
+                var x = parseInt(document.getElementById("x").value);
+                alert(Math.cos(x));
+                
+                }
+                
+                function tanHesapla() 
+                {
+                    var i = parseInt(document.getElementById("x").value);
+                    alert(Math.tan(i));
+                }
+                
+                 function cotHesapla() 
+                {
+                    var z = parseInt(document.getElementById("x").value);
+                    var tan = Math.tan(z);
+                    alert(1/tan);
+                    
+                }
+                             
+                             
+                function asinHesapla() 
+                {
+                    var y = parseInt(document.getElementById("x").value);
+                    alert(Math.asin(y));
+                }
+                
+                
+                function acosHesapla() 
+                {
+                    var t = parseInt(document.getElementById("x").value);
+                    alert(Math.acos(t));
+                }
+                
+                function atanHesapla() 
+                {
+                    var r = parseInt(document.getElementById("x").value);
+                    alert(Math.atan(r));
+                }
+                function secHesapla() 
+                {
+                    var q = parseInt(document.getElementById("x").value);
+                    var cos = Math.cos(q);
+                    alert(1/cos);
+                    
+                }
+                
+                function cosecHesapla() {
+                    var u = parseInt(document.getElementById("x").value);
+                    var sin = Math.sin(u);
+                    alert(1/sin);
+                } 
+                
+                function radianDönüstür() {
+                    var degree= parseInt(document.getElementById("d").value);
+                    var radian= (0.0174532925);
+                    var converted = (radian*degree);
+                    text += "<br>Sonuç: " + converted;
+                    document.getElementById("text").innerHTML = text;
+                    
+                }
+                
+                
+                
+                
+                
+                </script>
+             <div id="hepsi">
+                <input type="number" id="x" value="0" name="x"><br><br>
+                
+                
+                
+                <input type="button" id="buton" value="sin(x)" onclick="sinHesapla()">
+                <input type="button" id="buton" value="cos(x)" onclick="cosHesapla()">
+                <input type="button" id="buton" value="tan(x)" onclick="tanHesapla()">
+                <input type="button" id="buton" value="cot(x)" onclick="cotHesapla()">
+                <input type="button" id="buton" value="arcsin(x)" onclick="asinHesapla()">
+                <input type="button" id="buton" value="arccos(x)" onclick="acosHesapla()">
+                <input type="button" id="buton" value="arctan(x)" onclick="atanHesapla()">
+                <input type="button" id="buton" value="sec(x)" onclick="secHesapla()">
+                <input type="button" id="buton" value="cosec(x)" onclick="cosecHesapla()">
+                <p id="demo" class="p">Radyan cinsinden girdi veriniz.</p>
+                <p class="p">-----------------------------------------</p>
+                
+                <p id="demo2" class="p"> DERECE ==> RADYAN dönüştürücü<p><br>
+                <input type="number" id="d" value="0"><br><br>
+                <input type="button" id="buton" onclick="radianDönüstür()" value="Dönüştür">
+                <p id="text"></p>
+               </div>
+                   
+                   <style> 
+               
+                    
+                    #hepsi {
+                        width:550px;
+                        height:250px;
+                        
+                        position:absolute;
+                        top:0;
+                        right:0;
+                        left:0;
+                        bottom:0;
+                        margin:auto;
+                        
+                        
+                    }
+                    
+                    #x, #d {
+                        border:1px solid #1c1c1c;
+                        border-radius:4px;
+                    }
+                    
+                    #buton {
+                        border:1px solid #1c1c1c;
+                        border-radius:2px;
+                    }             
+                    
+                    .p {
+                       color:#405580;
+                       font-weight: bold;
+                       font-style: italic;
+                    } 
+                   
+                    </style>
+                   
+                   
+               
+    </head>
+    <body>
+    </body>
+    </html>

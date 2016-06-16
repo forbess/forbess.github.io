@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<div id="numaralar">
+		<input type="number" value="0" class="numm" id="rakam1"><font id="yazi">x + </font><input type="number" value="0" class="numm" id="rakam2"><font id="yazi">y = </font><input type="number" value="0" class="numm" id="rakam3"><br><br><br><input type="number" value="0" class="numm" id="rakam4"><font id="yazi">x + </font></font><input type="number" value="0" class="numm" id="rakam5"><font id="yazi">y = </font><input type="number" value="0" class="numm" id="rakam6"><br><br><br><input type="button" onclick="gaussianMetodu()" value="Hesapla"><br><br><br><br><br>
+	</div>
+<title>Denklem 3</title>
+<script>
+function gaussianMetodu() {
+	var x1 = parseInt(document.getElementById("rakam1").value);
+		var y1 = parseInt(document.getElementById("rakam2").value);
+	var eq1 = parseInt(document.getElementById("rakam3").value);
+		var x2 = parseInt(document.getElementById("rakam4").value);
+	var y2 = parseInt(document.getElementById("rakam5").value);
+		var eq2 = parseInt(document.getElementById("rakam6").value);
+	var denklem1 = (x1 + "x" + "(+)" + y1 + "y" + "=" + "" + eq1);var denklem2 = (x2 + "x" + "(+)" + y2 + "y" + "=" + "" + eq2);
+	alert("Denkleminiz1: " + denklem1 + " ve " + denklem2);
+
+	
+
+		 if (x1,x2,y1 > 0 && y2 < 0) 
+		{
+			var denklemNew1 = (x1 + "x" + "(+)" + y1 + "y" + "=" + "" + eq1);var denklemNew2 = (x2 + "x" + "=" + eq2 + "" + "(+)" + (-y2) + "y"); // (x2 + "x" + "(+)" + (-y2) + "y" + "=" + "" + eq2);      
+			alert("Denkleminiz değiştirildi: " + denklemNew1 + " ve " + denklemNew2);
+
+		}
+		
+		else
+		{
+			alert("denklem1");
+		} 
+}
+
+</script>
+<style>
+body {
+	background: white;
+	background: radial-gradient(circle, #FFFFFF 20%, #CCCCCC);
+	background-size: cover;
+}
+.numm {
+ 	width:60px;
+ 	border: 1px solid #1c1c1c;
+ 	border-radius: 2px;
+ 	margin-right: 4px;
+
+ 	
+ }
+
+#numaralar {
+	margin:200px auto 0px 420px;
+}
+
+#yazi {
+	color:#405580;
+	font-weight: bold;
+	font-style: italic;
+}
+
+</style>
+</head>
+<body>
+
+</body>
+</html>

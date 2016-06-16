@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="tabanlarjs.js"></script>
+ 	<style>
+
+  html {
+
+    height: 100%;
+
+        
+                       
+  }
+ 	h2 > a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: #fff;
+}
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.a {
+  border: 6px solid #405580;
+  background-color: #405580;
+  border-radius:4px;
+  font-family:"Times New Roman" , Times, serif;
+  
+}
+
+#tabanlar {
+	width:110px;
+	height:450px;
+  
+	
+	top:0;bottom:0;right:0;left:0;margin:auto;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="tabanlar">
+  
+  <h2><a href="tabaniki.html" class="a"><font color="white">Taban 2</font></a></h2>
+  <h2><a href="tabanuc.html" class="a"><font color="white">Taban 3</font></a></h2>
+  <h2><a href="tabandort.html" class="a"><font color="white">Taban 4</font></a></h2>
+  <h2><a href="tabanbes.html" class="a"><font color="white">Taban 5</font></a></h2>
+  <h2><a href="tabanalti.html" class="a"><font color="white">Taban 6</font></a></h2>
+  <h2><a href="tabanyedi.html" class="a"><font color="white">Taban 7</font></a></h2>
+  <h2><a href="tabansekiz.html" class="a"><font color="white">Taban 8</font></a></h2>
+  <h2><a href="tabandokuz.html" class="a"><font color="white">Taban 9</font></a></h2>
+</div>
+</body>
+</html>

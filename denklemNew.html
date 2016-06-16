@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+<head>
+
+	<div id="numaralar">
+<input type="number" value="0" id="idOfa"><font id="yazi">x(kare) + </font></font><input type="number" value="0" id="idOfb"><font id="yazi">x + </font><input type="number" value="0" id="idOfc"><font id="yazi">= 0</font><br><br><br><input type="button" onclick="kokBul()" value="Hesapla"><br><br><br><br><br><font id="yazi">Denklem "Diskriminant (Δ)" yöntemiyle çözülmektedir.</font>
+
+<!-- <br><br><br><br><input type="number" value="0" id="num1"><img src="xkare.png"><input type="number" value="0" id="num2"><img src="x.png"><input type="number" value="0" id="num3"><font id="yazi">= 0</font><br><br><br><input type="button" onclick="kokBul()" value="Hesapla"><br><br><br><br><br><font id="yazi">Denklem "Delta (Δ)" yöntemiyle çözülmektedir.</font> -->
+
+
+	</div>
+<script>
+
+
+function kokBul() {
+	var a = parseInt(document.getElementById("idOfa").value);
+	var b = parseInt(document.getElementById("idOfb").value);
+	var c = parseInt(document.getElementById("idOfc").value); 
+	var delta = ((b*b) - (4*a*c));
+	var kok = Math.sqrt(delta);
+    alert(delta);
+
+	if (delta > 0) 
+	{
+		var kok1 = (((-b) - (kok)) / (2*a));
+		var kok2 = ((-b) + (kok) / (2*a));
+		alert("2 kök var (Δ > 0): " + kok1 + " ve " + kok2);
+	
+	} else if (delta === 0) 
+	
+	{
+		var kok3 = ((-b) / (2*a));
+		alert("1 kök var (Δ = 0): " +kok3);
+	
+	} else 
+
+	{
+		alert("Kök Yok (Δ < 0).");
+	}
+}
+
+
+
+</script>
+<style>
+body {
+	background: white;
+	background: radial-gradient(circle, #FFFFFF 20%, #CCCCCC);
+	background-size: cover;
+}
+ #idOfa , #idOfb , #idOfc {
+ 	width:60px;
+ 	border: 1px solid #1c1c1c;
+ 	border-radius: 2px;
+ 	margin-right: 4px;
+
+ 	
+ }
+
+#numaralar {
+	margin:200px auto 0px 420px;
+}
+
+#yazi {
+	color:#405580;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+</style>
+</head>
+<body>
+</body>
+</html>
