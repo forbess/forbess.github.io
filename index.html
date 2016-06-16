@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+<html lang="tr">
+<!-- #AUTHOR: SLEVIN FORBES# -->
+<center><font color="white" face="Windows Command Prompt"><h1>"11.SINIF KARNE ORTALAMASI HESAPLAMA"</h1></font></center>
+<center><font color="white" face="Windows Command Prompt"><text></text></font></center><br>
+<p></p>  
+<style>
+
+@font-face {
+	font-family: "Windows Command Prompt";
+	src: url(windows_command_prompt_0.ttf);
+}
+
+body {
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+
+}
+
+.kutular {
+	width:900px;
+	margin:auto;
+}
+.kutucuk {
+	width:200px;
+	margin:8px;
+	float:left;
+	border-style:solid;
+	border-color:#B8B8B8;
+	border-radius:5px;
+	text-align:center;
+	color:#FFFFFF;
+	font-family: "Times New Roman", Times, serif;
+	font-size:16px;
+	
+}
+
+input[type=button] {
+	font-family: "Times New Roman", Times, serif;
+	font-size:26px;
+	border-radius:5px;
+}
+
+input[type=number] {
+	border-radius:5px;
+	font-family: "Times New Roman", Times, serif;
+	font-size:16px;
+	border-color:#FFFFFF;
+}
+
+
+</style> 
+</head>
+	<body bgcolor="#0A0A0A">
+	
+
+<body>
+
+
+<form name ="karneOrtalaması">      
+	<div class="kutular">
+		<div class="kutucuk">Beden Egitimi 1.Sinav<input type = "number" id ="bed1"  value = "0"></div>
+		<div class="kutucuk">Beden Egitimi 2.Sinav<input type = "number" id ="bed2"  value = "0"></div>
+		<div class="kutucuk">Beden Egitimi 1.Performans<input type = "number" id ="bed3"  value = "0"></div>
+		<div class="kutucuk">Beden Egitimi 2.Performans<input type = "number" id ="bed4"  value = "0"></div>
+		<div class="kutucuk">Biyoloji 1.Sinav<input type = "number" id ="biyo1"  value = "0"></div>
+		<div class="kutucuk">Biyoloji 2.Sinav<input type = "number" id ="biyo2"  value = "0"></div>
+		<div class="kutucuk">Biyoloji 1.Performans<input type = "number" id ="biyo3"  value = "0"></div>
+		<div class="kutucuk">Biyoloji 2.Performans<input type = "number" id ="biyo4"  value = "0"></div>
+		<div class="kutucuk">Dil ve Anlatım 1.Sinav<input type = "number" id ="dil1"  value = "0"></div>
+		<div class="kutucuk">Dil ve Anlatım 2.Sinav<input type = "number" id ="dil2"  value = "0"></div>
+		<div class="kutucuk">Dil Ve Anlatım 1.Performans<input type = "number" id ="dil3"  value = "0"></div>
+		<div class="kutucuk">Dil ve Anlatım 2.Performans<input type = "number" id ="dil4"  value = "0"></div>
+		<div class="kutucuk">Din 1.Sinav<input type = "number" id ="din1"  value = "0"></div>
+		<div class="kutucuk">Din 2.Sinav<input type = "number" id ="din2"  value = "0"></div>
+		<div class="kutucuk">Din 1.Performans<input type = "number" id ="din3"  value = "0"></div>
+		<div class="kutucuk">Din 2.Performans<input type = "number" id ="din4"  value = "0"></div>
+		<div class="kutucuk">Fizik 1.Sinav<input type = "number" id ="fiz1"  value = "0"></div>
+		<div class="kutucuk">Fizik 2.Sinav<input type = "number" id ="fiz2"  value = "0"></div>
+		<div class="kutucuk">Fizik 1.Performans<input type = "number" id ="fiz3"  value = "0"></div>
+		<div class="kutucuk">Fizik 2.Performans<input type = "number" id ="fiz4"  value = "0"></div>
+		<div class="kutucuk">Müzik 1.Sinav<input type = "number" id ="müz1"  value = "0"></div>
+		<div class="kutucuk">Müzik 2.Sinav<input type = "number" id ="müz2"  value = "0"></div>
+		<div class="kutucuk">Müzik 1.Performans<input type = "number" id ="müz3"  value = "0"></div>
+		<div class="kutucuk">Müzik 2.Performans<input type = "number" id ="müz4"  value = "0"></div>
+		<div class="kutucuk">Almanca 1.Sinav<input type = "number" id ="alm1"  value = "0"></div>
+		<div class="kutucuk">Almanca 2.Sinav<input type = "number" id ="alm2"  value = "0"></div>
+		<div class="kutucuk">Almanca 1.Performans<input type = "number" id ="alm3"  value = "0"></div>
+		<div class="kutucuk">Almanca 2.Performans<input type = "number" id ="alm4"  value = "0"></div>
+		<div class="kutucuk">Kimya 1.Sinav<input type = "number" id ="kim1"  value = "0"></div>
+		<div class="kutucuk">Kimya 2.Sinav<input type = "number" id ="kim2"  value = "0"></div>
+		<div class="kutucuk">Kimya 1.Performans<input type = "number" id ="kim3"  value = "0"></div>
+		<div class="kutucuk">Kimya 2.Performans<input type = "number" id ="kim4"  value = "0"></div>
+		<div class="kutucuk">Matematik 1.Sinav<input type = "number" id ="mat1"  value = "0"></div>
+		<div class="kutucuk">Matematik 2.Sinav<input type = "number" id ="mat2"  value = "0"></div>
+		<div class="kutucuk">Matematik 1.Performans<input type = "number" id ="mat3"  value = "0"></div>
+		<div class="kutucuk">Matematik 2.Performans<input type = "number" id ="mat4"  value = "0"></div>
+		<div class="kutucuk">İşletme 1.sınav<input type = "number" id ="isl1"  value = "0"></div>
+		<div class="kutucuk">İşletme 2.Sınav<input type = "number" id ="isl2"  value = "0"></div>
+		<div class="kutucuk">İşletme 1.Performans<input type = "number" id ="isl3"  value = "0"></div>
+		<div class="kutucuk">İşletme 2.Performans<input type = "number" id ="isl4"  value = "0"></div>
+		<div class="kutucuk">Felsefe 1.Sinav<input type = "number" id ="fels1" value = "0"></div>
+		<div class="kutucuk">Felsefe 2.Sinav<input type = "number" id ="fels2"  value = "0"></div>
+		<div class="kutucuk">Felsefe 1.Performans<input type = "number" id ="fels3"  value = "0"></div>
+		<div class="kutucuk">Felsefe 2.Performans<input type = "number" id ="fels4"  value = "0"></div>
+		<div class="kutucuk">T.D.Bilgiler 1.Sinav<input type = "number" id ="tbil1"  value = "0"></div>
+		<div class="kutucuk">T.D.Bilgiler 2.Sinav<input type = "number" id ="tbil2"  value = "0"></div>
+		<div class="kutucuk">T.D.Bilgiler 1.Performans<input type = "number" id ="tbil3"  value = "0"></div>
+		<div class="kutucuk">T.D.Bilgiler 2.Performans<input type = "number" id ="tbil4"  value = "0"></div>
+		<div class="kutucuk">Tarih 1.Sinav<input type = "number" id ="tar1"  value = "0"></div>
+		<div class="kutucuk">Tarih 2.Sinav<input type = "number" id ="tar2"  value = "0"></div>
+		<div class="kutucuk">Tarih 1.Performans<input type = "number" id ="tar3"  value = "0"></div>
+		<div class="kutucuk">Tarih 2.Performans<input type = "number" id ="tar4"  value = "0"></div>
+		<div class="kutucuk">Edebiyat 1.Sinav<input type = "number" id ="ed1"  value = "0"></div>
+		<div class="kutucuk">Edebiyat 2.Sinav<input type = "number" id ="ed2"  value = "0"></div>
+		<div class="kutucuk">Edebiyat 1.Performans<input type = "number" id ="ed3"  value = "0"></div>
+		<div class="kutucuk">Edebiyat 2.Performans<input type = "number" id ="ed4"  value = "0"></div>
+		<div class="kutucuk">Ingilizce 1.Sinav<input type = "number" id ="ing1"  value = "0"></div>
+		<div class="kutucuk">Ingilizce 2.Sinav<input type = "number" id ="ing2"  value = "0"></div>
+		<div class="kutucuk">Ingilizce 1.Performans<input type = "number" id ="ing3"  value = "0"></div>
+		<div class="kutucuk">Ingilizce 2.Performans<input type = "number" id ="ing4"  value = "0"></div>
+		
+			</div>	
+				
+
+
+				 
+
+</form>
+		<center><div class="buton"><input type = "button" onClick = ortHesapla() value = "Ortalamayi görmek için tiklayiniz."></div></center>
+		
+	
+<script>
+
+function ortHesapla() {
+	
+var bedOrt = ((parseInt(document.karneOrtalaması.bed1.value) + parseInt(document.karneOrtalaması.bed2.value) + parseInt(document.karneOrtalaması.bed3.value) + parseInt(document.karneOrtalaması.bed4.value)) / 4);
+var biyoOrt = ((parseInt(document.karneOrtalaması.biyo1.value) + parseInt(document.karneOrtalaması.biyo2.value) + parseInt(document.karneOrtalaması.biyo3.value) + parseInt(document.karneOrtalaması.biyo4.value)) / 4);
+var dilOrt = ((parseInt(document.karneOrtalaması.dil1.value) + parseInt(document.karneOrtalaması.dil2.value) + parseInt(document.karneOrtalaması.dil3.value) + parseInt(document.karneOrtalaması.dil4.value)) /4 );
+var dinOrt = ((parseInt(document.karneOrtalaması.din1.value) + parseInt(document.karneOrtalaması.din2.value) + parseInt(document.karneOrtalaması.din3.value) + parseInt(document.karneOrtalaması.din4.value)) /4 );
+var fizOrt = ((parseInt(document.karneOrtalaması.fiz1.value) + parseInt(document.karneOrtalaması.fiz2.value) + parseInt(document.karneOrtalaması.fiz3.value) + parseInt(document.karneOrtalaması.fiz4.value)) /4 );
+var müzOrt = ((parseInt(document.karneOrtalaması.müz1.value) + parseInt(document.karneOrtalaması.müz2.value) + parseInt(document.karneOrtalaması.müz3.value) + parseInt(document.karneOrtalaması.müz4.value)) /4 );
+var almOrt = ((parseInt(document.karneOrtalaması.alm1.value) + parseInt(document.karneOrtalaması.alm2.value) + parseInt(document.karneOrtalaması.alm3.value) + parseInt(document.karneOrtalaması.alm4.value)) /4 );
+var kimOrt = ((parseInt(document.karneOrtalaması.kim1.value) + parseInt(document.karneOrtalaması.kim2.value) + parseInt(document.karneOrtalaması.kim3.value) + parseInt(document.karneOrtalaması.kim4.value)) /4 );
+ var matOrt = ((parseInt(document.karneOrtalaması.mat1.value) + parseInt(document.karneOrtalaması.mat2.value) + parseInt(document.karneOrtalaması.mat3.value) + parseInt(document.karneOrtalaması.mat4.value)) /4 );
+ var islOrt = ((parseInt(document.karneOrtalaması.isl1.value) + parseInt(document.karneOrtalaması.isl2.value) + parseInt(document.karneOrtalaması.isl3.value) + parseInt(document.karneOrtalaması.isl4.value)) /4) ;
+var felsOrt = ((parseInt(document.karneOrtalaması.fels1.value) + parseInt(document.karneOrtalaması.fels2.value) + parseInt(document.karneOrtalaması.fels3.value) + parseInt(document.karneOrtalaması.fels4.value)) /4);
+var tbilOrt = ((parseInt(document.karneOrtalaması.tbil1.value) + parseInt(document.karneOrtalaması.tbil2.value) + parseInt(document.karneOrtalaması.tbil3.value) + parseInt(document.karneOrtalaması.tbil4.value)) /4);
+var tarOrt = ((parseInt(document.karneOrtalaması.tar1.value) + parseInt(document.karneOrtalaması.tar2.value) + parseInt(document.karneOrtalaması.tar3.value) + parseInt(document.karneOrtalaması.tar4.value)) /4);
+var edOrt = ((parseInt(document.karneOrtalaması.ed1.value) + parseInt(document.karneOrtalaması.ed2.value) + parseInt(document.karneOrtalaması.ed3.value) + parseInt(document.karneOrtalaması.ed4.value)) /4);
+var ingOrt = ((parseInt(document.karneOrtalaması.ing1.value) + parseInt(document.karneOrtalaması.ing2.value) + parseInt(document.karneOrtalaması.ing3.value) + parseInt(document.karneOrtalaması.ing4.value)) /4 );
+
+
+
+	var genelOrt =  (((bedOrt * 2 ) + (biyoOrt * 3) +  (dilOrt * 2 ) + (dinOrt * 1 ) + (fizOrt * 4 ) + (müzOrt * 1 ) + (almOrt * 2 ) + (kimOrt * 4 ) + (matOrt * 6 ) + (islOrt * 2) + (felsOrt * 2 ) + (tbilOrt * 1 ) + (tarOrt * 2 ) + (edOrt *3 ) + (ingOrt *4 )) /  39 );
+
+
+ alert(genelOrt);
+ 
+ if (genelOrt < 49.99) 
+ 	
+ 	{
+ 		alert("SINIFTA KALDINIZ!");
+	}	
+		else if ( 49.99 < genelOrt < 69.99) {alert("SINIFI GEÇTıNıZ!");
+	}	
+		else if (69.99 < genelOrt < 84.99) {alert("TEÞEKKÜR ALDINIZ");
+  	}	
+  		else {alert("TAKDıR ALDINIZ!");
+	}		
+}
+
+
+
+   
+
+
+</script>
+	
+	</body>
+
+</html>
