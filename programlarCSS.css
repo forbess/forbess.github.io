@@ -2,7 +2,7 @@
     margin:0;
     border:0;
     padding:0;
-    
+
 }
 
 iframe {
@@ -13,20 +13,20 @@ iframe {
     margin-bottom: 0px;
     margin-left:200px;
     border:1px transparent #fff;
-    
+
 }
 
 body {
-    background-color:black;
-   background-color: #fff; 
-background-image: 
-linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-linear-gradient(#eee .1em, transparent .1em);
-background-size: 100% 1.2em;
+    background-color:pink;
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
     font: 14px/20px Arial, Sans-Serif;
     color:#555;
     margin:0;
-    
+
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
     font-size: 180%;
     line-height: 120%;
     padding: 5% 0;
-    
+
 }
 
 h2 {
@@ -46,16 +46,16 @@ h2 {
 h3 {
     line-height: 110%;
     padding: 5% 0;
-    
+
 }
 
 p {
     padding:1%;
-    
+
 }
 
 img {
-    
+
     text-align: center;
     max-width: 100%;
     height: auto;
@@ -69,7 +69,7 @@ a {
 }
 
 a:hover {
-    color: #FFF;    
+    color: #FFF;
     text-decoration: underline;
 }
 
@@ -82,7 +82,7 @@ header {
     left:0;
     z-index: 1;
     opacity: 0.90;
-    
+
 }
 
 #logo {
@@ -91,7 +91,7 @@ header {
     width: 200px;
     height: 60px;
     background: url(headerLogo.png) no-repeat center;
-    
+
 }
 
 nav {
@@ -104,7 +104,7 @@ nav {
     width: 40px;
     height: 40px;
     background: url(menuIcon.png) center;
-    
+
 }
 
 a:hover#menu-icon {
@@ -123,12 +123,12 @@ nav ul li {
 
 .current {
     color:#FFF;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 #doc {
     margin: 40px 0;
-    
+
 }
 
 #content {
@@ -147,7 +147,7 @@ section {
     float : left;
     margin: 2% 2%;
     text-align: center;
-   
+
 }
 
 .clear {
@@ -160,7 +160,7 @@ article {
     width: 50%;
     height: auto;
     padding: 4%;
-        
+
 }
 
 aside {
@@ -169,7 +169,7 @@ aside {
     width: 35%;
     height :auto;
     padding: 3%;
-    
+
 }
 
 ul.gym li {
@@ -185,7 +185,7 @@ footer {
 
 footer p, footer h3 {
     color : #FFFFFF;
-    
+
 }
 
 footer p a {
@@ -217,9 +217,9 @@ footer.second {
             margin: -519px 0 0 0;
             padding: 0px;
             position:static;
-            
+
         }
-        
+
         .nav-bar:link, .nav-bar:visited {
             display: block;
             font-weight: default;
@@ -233,11 +233,11 @@ footer.second {
             font:  14px/20px Arial, Sans-Serif;
             border-bottom: 10px solid rgba(255, 255, 255, 0.12);
             border-top: 5px solid rgba(255, 255, 255, 0.12);
-            
+
         }
-        
+
         .nav-bar:hover,.nav-bar:active {
-            background-color: #333333;  
+            background-color: #333333;
         }
 
 
@@ -248,13 +248,13 @@ footer.second {
 
 @media screen and (max-width: 478px) {
     body {
-        position: absolute; 
+        position: absolute;
     }
 
 }
 
 @media screen and (max-width: 740px) {
-    header {     
+    header {
         position: absolute;
     }
 
@@ -266,7 +266,7 @@ footer.second {
     margin-bottom: 0px;
     margin-left:145px;
     border:1px solid;
-    
+
 }
 
 .navv {
@@ -274,9 +274,9 @@ footer.second {
             margin: -420px 0 0 0;
             padding: 0px;
             position:static;
-            
+
         }
-        
+
         .nav-bar:link, .nav-bar:visited {
             display: block;
             font-weight: default;
@@ -291,14 +291,14 @@ footer.second {
             border-bottom: 1px solid #333333;
             border-radius: 2px;
         }
-        
+
         .nav-bar:hover,.nav-bar:active {
-            background-color: #333333;  
+            background-color: #333333;
         }
 
 
 
-    
+
     #menu-icon {
         display: inline-block;
     }
@@ -318,7 +318,7 @@ footer.second {
         width: 100%;
         padding: 10px 0 ;
         margin: 0;
-            
+
     }
     nav:hover ul {
         display: block;
@@ -328,7 +328,7 @@ footer.second {
         width: 100%;
         margin: 0;
         padding: 0;
-        
+
     }
     article {
         float:left;
@@ -343,6 +343,3 @@ footer.second {
         padding: 0;
     }
 }
-
-
-
